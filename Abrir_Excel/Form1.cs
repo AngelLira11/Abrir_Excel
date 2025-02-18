@@ -46,7 +46,7 @@ namespace Abrir_Excel
                     if (dt.Rows.Count > 0)
                     {
                         dataGridViewEditor.Columns.Clear();
-                        dataGridViewEditor.DataSource = dt; 
+                        dataGridViewEditor.DataSource = dt;
                     }
                 }
             }
@@ -86,7 +86,7 @@ namespace Abrir_Excel
 
         private void btnFila_Click(object sender, EventArgs e)
         {
-            
+
             if (dataGridViewEditor.Columns.Count == 0)
             {
                 MessageBox.Show("Debe haber al menos una columna antes de agregar filas.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -104,6 +104,13 @@ namespace Abrir_Excel
 
             // Agregar nueva fila a la tabla
             dataGridViewEditor.Rows.Add(nuevaFila);
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            dataGridViewEditor.Rows.Clear();
+            dataGridViewEditor.Columns.Clear();
+
         }
     }
 }

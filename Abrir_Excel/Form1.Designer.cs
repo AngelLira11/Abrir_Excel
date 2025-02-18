@@ -39,6 +39,7 @@
             btnFila = new Button();
             txtNameColumna = new TextBox();
             label1 = new Label();
+            btnLimpiar = new Button();
             menuStrip1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewEditor).BeginInit();
@@ -103,7 +104,7 @@
             // 
             // btnColumna
             // 
-            btnColumna.Location = new Point(49, 395);
+            btnColumna.Location = new Point(72, 417);
             btnColumna.Name = "btnColumna";
             btnColumna.Size = new Size(148, 29);
             btnColumna.TabIndex = 2;
@@ -113,7 +114,7 @@
             // 
             // btnFila
             // 
-            btnFila.Location = new Point(203, 395);
+            btnFila.Location = new Point(341, 417);
             btnFila.Name = "btnFila";
             btnFila.Size = new Size(128, 29);
             btnFila.TabIndex = 3;
@@ -123,7 +124,7 @@
             // 
             // txtNameColumna
             // 
-            txtNameColumna.Location = new Point(553, 397);
+            txtNameColumna.Location = new Point(154, 384);
             txtNameColumna.Name = "txtNameColumna";
             txtNameColumna.Size = new Size(125, 27);
             txtNameColumna.TabIndex = 4;
@@ -131,17 +132,28 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(415, 400);
+            label1.Location = new Point(16, 387);
             label1.Name = "label1";
             label1.Size = new Size(132, 20);
             label1.TabIndex = 5;
             label1.Text = "Nombre columna: ";
+            // 
+            // btnLimpiar
+            // 
+            btnLimpiar.Location = new Point(649, 409);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(127, 29);
+            btnLimpiar.TabIndex = 6;
+            btnLimpiar.Text = "Eliminar Tabla";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnLimpiar);
             Controls.Add(label1);
             Controls.Add(txtNameColumna);
             Controls.Add(btnFila);
@@ -172,5 +184,6 @@
         private Button btnFila;
         private TextBox txtNameColumna;
         private Label label1;
+        private Button btnLimpiar;
     }
 }
