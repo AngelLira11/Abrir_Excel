@@ -40,6 +40,8 @@
             txtNameColumna = new TextBox();
             label1 = new Label();
             btnLimpiar = new Button();
+            programasToolStripMenuItem = new ToolStripMenuItem();
+            fechasToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewEditor).BeginInit();
@@ -48,7 +50,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, programasToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 28);
@@ -65,14 +67,14 @@
             // excelToolStripMenuItem
             // 
             excelToolStripMenuItem.Name = "excelToolStripMenuItem";
-            excelToolStripMenuItem.Size = new Size(217, 26);
+            excelToolStripMenuItem.Size = new Size(224, 26);
             excelToolStripMenuItem.Text = "Abrir Archivo ( .xls)";
             excelToolStripMenuItem.Click += excelToolStripMenuItem_Click;
             // 
             // guardarArchivoToolStripMenuItem
             // 
             guardarArchivoToolStripMenuItem.Name = "guardarArchivoToolStripMenuItem";
-            guardarArchivoToolStripMenuItem.Size = new Size(217, 26);
+            guardarArchivoToolStripMenuItem.Size = new Size(224, 26);
             guardarArchivoToolStripMenuItem.Text = "Guardar Archivo";
             // 
             // openFileDialogEditor
@@ -148,6 +150,20 @@
             btnLimpiar.UseVisualStyleBackColor = true;
             btnLimpiar.Click += btnLimpiar_Click;
             // 
+            // programasToolStripMenuItem
+            // 
+            programasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fechasToolStripMenuItem });
+            programasToolStripMenuItem.Name = "programasToolStripMenuItem";
+            programasToolStripMenuItem.Size = new Size(94, 24);
+            programasToolStripMenuItem.Text = "Programas";
+            // 
+            // fechasToolStripMenuItem
+            // 
+            fechasToolStripMenuItem.Name = "fechasToolStripMenuItem";
+            fechasToolStripMenuItem.Size = new Size(224, 26);
+            fechasToolStripMenuItem.Text = "Fechas";
+            fechasToolStripMenuItem.Click += fechasToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -185,5 +201,7 @@
         private TextBox txtNameColumna;
         private Label label1;
         private Button btnLimpiar;
+        private ToolStripMenuItem programasToolStripMenuItem;
+        private ToolStripMenuItem fechasToolStripMenuItem;
     }
 }

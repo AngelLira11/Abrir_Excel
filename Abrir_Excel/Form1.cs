@@ -112,5 +112,11 @@ namespace Abrir_Excel
             dataGridViewEditor.Columns.Clear();
 
         }
+
+        private void fechasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFechas fechas = new frmFechas();
+            fechas.Show();
+        }
     }
 }
